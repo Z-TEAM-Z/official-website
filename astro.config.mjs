@@ -9,14 +9,15 @@ import vue from '@astrojs/vue';
 import { defineConfig, envField } from 'astro/config';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import node from '@astrojs/node';
+// import node from '@astrojs/node';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const publicEnv = { access: 'public', context: 'server', optional: true };
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://z-team-z.github.io',
+  base: '/official-website',
 
   env: {
     schema: {
@@ -41,9 +42,9 @@ export default defineConfig({
     sitemap({}),
   ],
 
-  adapter: node({
-    mode: 'standalone',
-  }),
+  // adapter: node({
+  //   mode: 'standalone',
+  // }),
 
   experimental: {
     logger: {
