@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./*"],
+      "@logger": ["./src/libs/logger/index.ts"],
+      "@logger/*": ["./src/libs/logger/*"]
+    },
+    "plugins": [{ "name": "@astrojs/ts-plugin" }]
+  }
+}

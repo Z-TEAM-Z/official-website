@@ -1,0 +1,12 @@
+---
+import BaseLayout from '@/layouts/base-layout.astro';
+import { logger } from '@logger';
+logger.info('index.astro', 'Hello World');
+---
+
+<BaseLayout>
+  <div class="container">
+    <h1>Hello World</h1>
+    <p>This is a test page.</p>
+  </div>
+</BaseLayout>
